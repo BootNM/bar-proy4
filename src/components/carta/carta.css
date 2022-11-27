@@ -1,0 +1,83 @@
+.listaDrinks{
+    display: grid;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+    'a b c'
+    'd e f'
+    'g h i';
+    min-width: 100vw;
+}
+
+.carta{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-image: url(https://wallpaperaccess.com/full/804379.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    padding-top: 100px;
+    min-width: 100vw;
+}
+
+.cartaPadre h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #dfc15e;
+    text-shadow: 4px 4px 8px #000000;
+    background: #3e3e3e;
+    border-style: dotted;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.presentacionCarta{
+    display: flex;
+    flex-direction: row;
+}
+
+.listaCarta{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 4px 4px 8px #000000;
+    color: #c4c4c4;
+    font-size: 30px;
+}
+
+.listaCarta h3{
+    display: flex;
+    align-items: center;
+    background: #3d3d3d;
+    border-style: dotted;
+    height: 50px;
+}
+.bar-inicio{
+    margin-left: 15px;
+}
+/* Querys */
+    
+    @media screen and (max-width: 990px){
+        .cartaPadre h1{
+            font-size: 20px;
+        }
+        .presentacionCarta{
+            flex-direction: column;
+        }
+        .carta{
+            height: 1100px;
+        }
+    }
+    @media screen and (max-width: 770px){
+        .cartaPadre h1, .listaCarta h3{
+            font-size: 14px;
+        }
+    }
